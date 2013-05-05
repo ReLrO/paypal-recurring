@@ -68,7 +68,11 @@ module PayPal
           :item_category,
           :item_name,
           :item_amount,
-          :item_quantity
+          :item_quantity,
+          :trial_length,
+          :trial_period,
+          :trial_frequency,
+          :trial_amount
         ).merge(
           :payment_action => "Authorization",
           :no_shipping => 1,
