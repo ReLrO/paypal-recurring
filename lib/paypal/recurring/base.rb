@@ -61,8 +61,13 @@ module PayPal
           :locale,
           :return_url,
           :cancel_url,
+          :currency,
           :description,
-          :ipn_url
+          :ipn_url,
+          :item_category,
+          :item_name,
+          :item_amount,
+          :item_quantity
         ).merge(
           :payment_action => "Authorization",
           :no_shipping => 1,
