@@ -59,20 +59,10 @@ module PayPal
       def checkout
         params = collect(
           :locale,
-          :amount,
           :return_url,
           :cancel_url,
-          :currency,
           :description,
-          :ipn_url,
-          :item_category,
-          :item_name,
-          :item_amount,
-          :item_quantity,
-          :trial_length,
-          :trial_period,
-          :trial_frequency,
-          :trial_amount
+          :ipn_url
         ).merge(
           :payment_action => "Authorization",
           :no_shipping => 1,
