@@ -59,6 +59,7 @@ module PayPal
       def checkout
         params = collect(
           :locale,
+          :amount,
           :return_url,
           :cancel_url,
           :currency,
